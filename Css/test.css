@@ -1,0 +1,14 @@
+.head {
+    background-color:bisque;
+    width: 100%;
+    height: 50px;
+}
+
+input {
+    border-style: none;
+    
+}
+
+.header-wrapper {
+    margin-top: 10px;
+}
