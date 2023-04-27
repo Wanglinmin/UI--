@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="Stylesheet" href="../Css/first.css"  >
+
+</head>
+<body>
+
+    <div id="el-r">
+
+        <div class="el-c" v-show="isShow">
+
+            <ul class="el-menu el-menu--dark" style="min-height:100%;" >
+
+                <li class="el-menu-item">首页</li>
+                <li class="el-menu-item">A</li>
+                <li class="el-menu-item">B</li>
+                <li class="el-menu-item">C</li>
+                <li class="el-menu-item">D</li>
+                <li class="el-menu-item">E</li>
+                <li class="el-menu-item">F</li>
+                <li class="el-menu-item">G</li>
+                <li class="el-menu-item">H</li>
+                <li class="el-menu-item">I</li>
+
+            </ul>
+
+        </div>
+
+        <button class="btn" @click="ret"><strong><<<</strong></button>
+
+    </div>
+
+    
+
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    var vm = new Vue({
+
+        el:'#el-r',
+
+        data:{
+            isShow:true
+        } ,
+
+        methods:{
+
+            ret:function(){
+
+            this.isShow =  !this.isShow
+
+            }
+
+
+    }
+
+
+    })
+
+</script>
+    
+</body>
+</html>
